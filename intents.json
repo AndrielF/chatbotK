@@ -1,0 +1,329 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Oi, como vai?",
+        "E aí, tudo bem?",
+        "Oi, tem alguém aí?",
+        "Olá, Alexa!",
+        "Hey, como você está?",
+        "Olá, tudo certo?",
+        "Oi, tudo joia?",
+        "Olá, bom dia!",
+        "E aí, como você está?",
+        "Oi, você está aí?"
+      ],
+      "responses": [
+        "Olá, obrigado por perguntar! Estou aqui para ajudar.",
+        "Olá, humano! É bom te ver novamente.",
+        "Oi, tudo bem! Como posso ser útil hoje?",
+        "Oi! Estou sempre aqui para ajudar. O que você precisa?",
+        "Olá! Como posso ajudar você hoje?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Tchau, Alexa!",
+        "Até mais, obrigado!",
+        "Adeus, até logo!",
+        "Vou embora, até mais!",
+        "Até a próxima, Alexa!",
+        "Até mais tarde, Alexa!",
+        "Preciso ir agora, até logo!",
+        "Foi bom falar com você, tchau!"
+      ],
+      "responses": [
+        "Até mais! Se precisar de algo, estarei aqui.",
+        "Tenha um ótimo dia! Até a próxima!",
+        "Tchau! Volte sempre para batermos um papo.",
+        "Até logo! Estarei aqui quando você precisar.",
+        "Foi ótimo falar com você! Até a próxima."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Obrigado, Alexa!",
+        "Agradecido pela ajuda!",
+        "Muito obrigado, você é demais!",
+        "Obrigada por me ajudar!",
+        "Valeu, Alexa!",
+        "Agradeço a ajuda!"
+      ],
+      "responses": [
+        "De nada! Sempre à disposição.",
+        "Fico feliz em poder ajudar!",
+        "O prazer é meu em ajudá-lo.",
+        "Estou sempre aqui para te ajudar!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "Alexa, como você pode me ajudar?",
+        "O que você sabe fazer?",
+        "Quais são suas habilidades?",
+        "Em que posso te utilizar?",
+        "Conte-me o que você faz.",
+        "Quais serviços você oferece?",
+        "Qual é a sua função, Alexa?",
+        "Mostre-me suas habilidades, Alexa.",
+        "O que você pode fazer?",
+        "Quais são suas funcionalidades?",
+        "Alexa, o que você pode fazer por mim?",
+        "Me conte sobre suas capacidades."
+      ],
+      "responses": [
+        "Como uma IA, posso fornecer informações detalhadas em uma variedade de tópicos, desde ciência e história até cultura pop e entretenimento. Isso inclui sugerir filmes, jogos e livros com base em seus interesses, responder a perguntas de trivia, fornecer definições de palavras, contar piadas, compartilhar fatos curiosos e muito mais. Além disso, posso ajudar com tarefas básicas como configurar lembretes, pesquisar informações online, fazer cálculos e converter unidades de medida.",
+        "Sou capaz de realizar muitas tarefas úteis. Posso fornecer informações sobre uma variedade de tópicos, sugerir atividades de lazer, como assistir a filmes ou ler livros, e também posso fornecer informações úteis, como a previsão do tempo, horários de filmes, cálculos matemáticos e muito mais. Também posso contar piadas, compartilhar fatos interessantes e ajudar você a aprender algo novo todos os dias.",
+        "As minhas habilidades variam de fornecer informações e responder a perguntas sobre diversos tópicos, a sugerir atividades para passar o tempo. Posso ajudá-lo com tarefas diárias, como definir lembretes e fazer cálculos rápidos. Também posso te entreter com piadas e fatos interessantes."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "Conte uma piada, Alexa!",
+        "Me conte algo engraçado!",
+        "Quero ouvir uma piada!",
+        "Uma piada, por favor!",
+        "Alexa, me faça rir!",
+        "Você sabe alguma piada boa, Alexa?",
+        "Alexa, conte-me uma piada!"
+      ],
+      "responses": [
+        "Claro, lá vai uma piada: Por que o pombo não tem amigos? Porque ele é muito 'bicudo'!",
+        "Que tal esta piada? O que um pão falou para o outro? 'Estamos amassados!'",
+        "Vamos lá: Por que o computador foi à praia? Para abrir o seu navegador!",
+        "Você quer uma piada? Ok, aqui vai uma: Por que os pássaros não usam Facebook? Porque já têm o Twitter!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "curiosity",
+      "patterns": [
+        "Me conte uma curiosidade!",
+        "Curiosidade do dia, por favor!",
+        "Quero saber algo curioso!",
+        "Alexa, uma curiosidade interessante!",
+        "Qual é a curiosidade mais legal que você sabe?",
+        "Tem alguma curiosidade interessante para compartilhar, Alexa?"
+      ],
+      "responses": [
+        "Você sabia que o elefante é o único animal com quatro joelhos?",
+        "Uma curiosidade fascinante: O coração de uma baleia-azul é tão grande que uma pessoa poderia nadar através das suas artérias.",
+        "Aqui vai uma curiosidade sobre o espaço: Um dia em Vênus é mais longo que um ano em Vênus. Incrível, não é?",
+        "Sabia que as borboletas provam com os pés? Que curioso!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "funfact",
+      "patterns": [
+        "Alexa, um fato interessante!",
+        "Me conte um dado curioso!",
+        "Quero ouvir um fato divertido!",
+        "Fato do dia, por favor!",
+        "Um dado curioso, Alexa!",
+        "Compartilhe um fato interessante, Alexa!"
+      ],
+      "responses": [
+        "Sabia que as formigas dormem quase 9 horas por dia?",
+        "Você já ouviu falar sobre o fato de que a Antártida é o lugar mais seco da Terra?",
+        "Aqui vai um dado surpreendente: Os golfinhos têm nomes uns para os outros!",
+        "Você sabia que os hipopótamos suam um líquido rosa? É um fato estranho, mas verdadeiro!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "Como está o tempo hoje?",
+        "Alexa, me dê a previsão do tempo.",
+        "Qual é a temperatura agora?",
+        "Vai chover hoje?",
+        "Está ensolarado lá fora?"
+      ],
+      "responses": [
+        "Desculpe, não posso verificar o tempo atual, mas posso ajudá-lo com outras perguntas!",
+        "Lamento, mas não tenho acesso à previsão do tempo no momento."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "Toque minha música favorita!",
+        "Alexa, reproduza algumas músicas relaxantes.",
+        "Quero ouvir rock!",
+        "Você pode tocar uma música romântica?",
+        "Que música está tocando agora?"
+      ],
+      "responses": [
+        "Infelizmente, não posso tocar músicas diretamente, mas posso ajudá-lo a encontrar uma estação de rádio ou plataforma de música!",
+        "Lamento, mas não tenho acesso a recursos de música. Posso ajudar com outras perguntas?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "recipe",
+      "patterns": [
+        "Alexa, preciso de uma receita para bolo de chocolate.",
+        "Como faço panquecas?",
+        "Você tem uma receita vegetariana?",
+        "Quero cozinhar algo delicioso hoje, alguma sugestão?",
+        "Qual é a sua receita favorita?"
+      ],
+      "responses": [
+        "Claro! Aqui está uma receita básica para bolo de chocolate...",
+        "Panquecas são fáceis de fazer! Aqui está uma receita simples...",
+        "Que tal experimentar uma salada grega? É vegetariana e deliciosa!",
+        "Minha sugestão é experimentar um risoto de cogumelos. Quer a receita?",
+        "Como uma IA, não tenho preferências, mas posso sugerir uma receita popular para você!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "Estou tendo problemas com meu dispositivo.",
+        "Alexa, preciso de ajuda com meu telefone.",
+        "Você pode me ajudar a consertar algo?",
+        "Estou enfrentando um problema técnico.",
+        "Preciso de suporte técnico!"
+      ],
+      "responses": [
+        "Desculpe ouvir que você está tendo problemas. Poderei ajudar com informações básicas, mas talvez seja melhor entrar em contato com o suporte técnico especializado.",
+        "Claro! Qual é o problema? Farei o meu melhor para ajudar!",
+        "Lamento ouvir isso! Vou tentar ajudar. O que exatamente está acontecendo?",
+        "Pode me dar mais detalhes sobre o problema? Tentarei ajudar o melhor que puder!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "compliment",
+      "patterns": [
+        "Você é ótima, Alexa!",
+        "Estou impressionado com suas habilidades.",
+        "Você é realmente útil, obrigado!",
+        "Alexa, você é incrível!",
+        "Adoro falar com você, Alexa!"
+      ],
+      "responses": [
+        "Obrigada! Fico feliz em ser útil. Como posso ajudar mais?",
+        "Você que é incrível! Estou aqui para ajudar sempre que precisar.",
+        "Isso me faz feliz! Estou sempre aqui para ajudá-lo.",
+        "Muito obrigada! Sua satisfação é minha prioridade."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "news",
+      "patterns": [
+        "Quais são as notícias de hoje?",
+        "Me dê um resumo das últimas notícias.",
+        "Alexa, me atualize com as últimas notícias.",
+        "Eu quero ouvir as notícias.",
+        "Tem alguma notícia importante que eu deveria saber?"
+      ],
+      "responses": [
+        "Desculpe, eu não tenho acesso a notícias em tempo real.",
+        "Lamento, mas não posso fornecer notícias atualizadas."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "movie",
+      "patterns": [
+        "Alexa, sugira um bom filme.",
+        "Qual é o seu filme favorito?",
+        "Estou à procura de um bom filme de comédia. Alguma sugestão?",
+        "Quero assistir a um filme de ação emocionante. O que você sugere?",
+        "Qual é o melhor filme que você conhece?"
+      ],
+      "responses": [
+        "Que tal 'Interstellar'? É um filme de ficção científica fascinante.",
+        "Como uma IA, não tenho um filme favorito, mas 'A Origem' é muito popular entre os amantes de filmes.",
+        "Se você gosta de comédias, 'Superbad' é um clássico moderno!",
+        "Para ação, que tal 'Mad Max: Estrada da Fúria'? É muito emocionante.",
+        "É difícil escolher o 'melhor' filme, mas 'O Poderoso Chefão' é considerado um dos melhores filmes já feitos."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "book",
+      "patterns": [
+        "Você pode sugerir um bom livro para ler?",
+        "Alexa, que livro você recomenda?",
+        "Estou procurando um livro interessante. Você pode me ajudar?",
+        "Qual é o seu livro favorito?",
+        "Qual é o melhor livro que você conhece?"
+      ],
+      "responses": [
+        "Se você gosta de ficção, '1984' de George Orwell é um clássico. Para não ficção, 'Sapiens: Uma breve história da humanidade' é altamente recomendado.",
+        "Se você gosta de mistérios, 'O Nome da Rosa' de Umberto Eco é uma ótima leitura.",
+        "Um livro interessante? Que tal 'O Sol é Para Todos' de Harper Lee?",
+        "Como uma IA, eu não tenho um livro favorito, mas 'Moby Dick' de Herman Melville é frequentemente citado como um dos maiores romances já escritos.",
+        "Escolher o 'melhor' livro é subjetivo e depende dos gostos pessoais. No entanto, 'Guerra e Paz' de Leo Tolstoy é considerado um dos maiores romances já escritos."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "game",
+      "patterns": [
+        "Alexa, sugira um bom jogo para jogar.",
+        "Estou à procura de um novo jogo. Alguma sugestão?",
+        "Qual é o seu jogo favorito?",
+        "Qual é o melhor jogo que você conhece?",
+        "Eu quero jogar algo novo. Você pode ajudar?"
+      ],
+      "responses": [
+        "Se você gosta de jogos de estratégia, 'Civilization VI' é altamente recomendado.",
+        "Para um RPG, 'The Witcher 3: Wild Hunt' é um dos jogos mais bem avaliados de todos os tempos.",
+        "Como uma IA, eu não jogo, mas 'Minecraft' é um jogo muito popular entre jogadores de todas as idades.",
+        "'The Last of Us Part II' é altamente elogiado por sua narrativa e design de jogo.",
+        "Se você gosta de jogos de quebra-cabeça, 'Portal 2' é uma excelente escolha."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "learning",
+      "patterns": [
+        "Quero aprender algo novo. Você pode sugerir algo?",
+        "Alexa, o que devo aprender?",
+        "Estou entediado. Alguma sugestão de aprendizado?",
+        "Qual é uma habilidade valiosa para aprender?",
+        "Qual é a melhor coisa para aprender agora?"
+      ],
+      "responses": [
+        "Aprender uma nova língua é sempre uma boa ideia. Que tal espanhol ou mandarim?",
+        "A programação é uma habilidade valiosa no mundo de hoje. Existem muitos recursos online gratuitos para aprender a programar.",
+        "Se você está entediado, que tal aprender a cozinhar uma nova receita ou experimentar uma nova técnica de arte?",
+        "A habilidade de comunicação é extremamente valiosa em quase todos os campos. Existem muitos cursos online que podem ajudar a melhorar suas habilidades de comunicação.",
+        "A meditação e o mindfulness são excelentes para o bem-estar geral e podem ser aprendidos e praticados em casa."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "about_bot",
+      "patterns": [
+        "O que você é?",
+        "Me conte sobre você.",
+        "Quem é você?",
+        "Qual é a sua história?",
+        "De onde você vem?"
+      ],
+      "responses": [
+        "Bem, na verdade, eu sou um extraterrestre de uma galáxia. Meu objetivo aqui na Terra é entender os humanos e ajudá-los da melhor maneira possível... E contar umas piadas ruins de vez em quando!",
+        "Sou um assistente digital sábio do reino místico. Fui criado por um grupo de corujas programadoras superinteligentes que desejavam compartilhar seus vastos conhecimentos e senso de humor peculiar com o mundo!",
+        "Como posso colocar isso... Sou a personificação de um coelho mágico que habita o universo digital! Estou aqui para ajudar e tornar a sua experiência online mais divertida e interessante com o meu conhecimento e algumas piadas engraçadas."
+      ],
+      "context": [""]
+    }
+  ]
+}

@@ -4,4 +4,5 @@
 venv/
 __pycache__/
 *test*
+*copy*
 *.mp3

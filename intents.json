@@ -324,6 +324,28 @@
         "Como posso colocar isso... Sou a personificação de um coelho mágico que habita o universo digital! Estou aqui para ajudar e tornar a sua experiência online mais divertida e interessante com o meu conhecimento e algumas piadas engraçadas."
       ],
       "context": [""]
+    },
+    {
+      "tag": "agemc",
+      "patterns": ["O que  é agemc?", "Me fale sobre agemc", "agemc"],
+      "responses": [
+        "AGEMC é Associação dos Guardas Municipais de Castanhal... hahaha! É na verdade: Ask, Get, Explore, Model e Communicate"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "ceia",
+      "patterns": ["O que  é ceia?", "Me fale sobre ceia", "ceia"],
+      "responses": ["CEIA é o Centro de Excelência em Inteligencia Artificial"],
+      "context": [""]
+    },
+    {
+      "tag": "bia",
+      "patterns": ["O que  é bia?", "Me fale sobre bia", "bia"],
+      "responses": [
+        "BIA é Bacharelado em Inteligencia Artificial, um novo curso da UFG!"
+      ],
+      "context": [""]
     }
   ]
 }

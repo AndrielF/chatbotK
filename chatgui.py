@@ -76,14 +76,24 @@ def chatbot_response(msg):
 
 
 def ask_openai(question):
-    prompt = f"""{question}
+    with open("personalizado.txt", "r", encoding="utf-8") as file:
+        user_input = file.read()
+
+    user_input = user_input.strip()
+
+    prompt = f"""Baseado que você é um atendente e nas seguintes informações:
+    {user_input}
+    
+    se necessário responda de forma sucinta e resumida a seguinte pergunta com as informações que você tem. 
+    
+    Pergunta: {question}
     """
 
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=prompt,
-        temperature=0,
-        max_tokens=350,
+        temperature=0.4,
+        max_tokens=250,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0,
@@ -142,9 +152,9 @@ def send_to_openai():
 
         base.update_idletasks()
 
-        tts = gTTS(text=res, lang="pt-br")
-        tts.save("response.mp3")
-        os.system("mpg321 response.mp3")
+        # tts = gTTS(text=res, lang="pt-br")
+        # tts.save("response.mp3")
+        # os.system("mpg321 response.mp3")
 
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
@@ -164,9 +174,9 @@ def send():
 
         base.update_idletasks()
 
-        tts = gTTS(text=res, lang="pt-br")
-        tts.save("response.mp3")
-        os.system("mpg321 response.mp3")
+        # tts = gTTS(text=res, lang="pt-br")
+        # tts.save("response.mp3")
+        # os.system("mpg321 response.mp3")
 
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
@@ -193,7 +203,7 @@ def voice_input():
 
 base = Tk()
 base.title("ChatBot")
-base.geometry("620x520")
+base.geometry("400x490")
 base.resizable(width=False, height=False)
 
 bg_color = "#f4f4f4"
@@ -258,9 +268,9 @@ ApiButton = Button(
 OpenAIButton = Button(
     base,
     font=("Verdana", 10, "bold"),
-    text="Ask ChatGPT",
-    width=button_width,
-    height=button_height,
+    text="SEND",
+    width=4,
+    height=4,
     bd=0,
     bg=btn_color,
     activebackground=btn_active_color,
@@ -271,13 +281,10 @@ OpenAIButton = Button(
 
 EntryBox = Text(base, bd=0, bg="white", width="50", height="5", font="Arial,12")
 
-scrollbar.place(x=575, y=6, height=386)
-ChatLog.place(x=10, y=6, height=386, width=560)
-EntryBox.place(x=10, y=420, height=80, width=560)
+scrollbar.place(x=380, y=6, height=410)
+ChatLog.place(x=10, y=6, height=410, width=370)
+EntryBox.place(x=10, y=420, height=60, width=320)
 
-OpenAIButton.place(x=10, y=360)
-ApiButton.place(x=10 + (button_width * 1 * 8 + button_spacing), y=360)
-VoiceButton.place(x=10 + (button_width * 2 * 8 + button_spacing * 2), y=360)
-SendButton.place(x=10 + (button_width * 3 * 8 + button_spacing * 3), y=360)
+OpenAIButton.place(x=330, y=422)
 
 base.mainloop()
